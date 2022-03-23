@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="imc.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="Blue" Padding="30" CornerRadius="0"/>
+
+        <Label Text=" Calculadora do IMC" HorizontalOptions="Center" TextColor="White" FontSize="20"/>
+        <Label Text="Insira seu Nome" />
+        <Entry x:Name="Nome"/>
+
+        <Label Text="Insira seu Peso"/>
+        <Entry x:Name="Peso"/>
+
+        <Label Text="Insira sua Altura" />
+        <Entry x:Name="Altura"/>
+
+        <Button x:Name="Button" Text="Calcular o IMC" Clicked="Button_Clicked" />
+
+
+
+        <Grid ColumnDefinitions="*,*" RowDefinitions="*,*,*,*,*,*,*" BackgroundColor="White">
+            <Label Text="imc" Grid.Row="1" Grid.Column="0"/>
+            <Label Text="Classificação" Grid.Row="1" Grid.Column="1"/>
+
+            <Label Text="Menor que 18.5 e 24.9" Grid.Row="3" Grid.Column="0"/>
+            <Label Text="Abaixo do Peso" Grid.Row="3" Grid.Column="1"/>
+
+            <Label Text="Menor que 25.0 e 29.9" Grid.Row="4" Grid.Column="0"/>
+            <Label Text="Acima do Peso" Grid.Row="4" Grid.Column="1"/>
+
+            <Label Text="Menor que 30.0 e 34.9" Grid.Row="5" Grid.Column="0"/>
+            <Label Text="Obsesidade grau 1" Grid.Row="5" Grid.Column="1"/>
+
+            <Label Text="Menor que 35.0 e 39.9" Grid.Row="6" Grid.Column="0"/>
+            <Label Text="Obsesidade grau 2" Grid.Row="6" Grid.Column="1"/>
+
+            <Label Text="Menor que 40.0"  Grid.Row="7" Grid.Column="0"/>
+            <Label Text="Obsesidade grau 3" Grid.Row="7" Grid.Column="1"/>
+        </Grid>
+
+    </StackLayout>
+</ContentPage>
